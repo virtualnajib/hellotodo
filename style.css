@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Black Jack";
+  src: url("./assets/BLACKJAR.TTF") format("truetype");
+}
+
+h1.description {
+  color: teal;
+  font-family: "Black Jack";
+}
+
+p {
+  font-family: Arial;
+}
+
+section{
+  width: 350px;
+  height: 250px;
+  background-color: #141E30;
+}
+
+#cover{
+  padding-top: 20px;
+  width: 500px;
+  height: 230px;
+  background-color: #654321;
+  align-items:center;
+}
+
+#title{
+  font-family: Arial;
+  color: teal;
+}
+
+#input-mind{
+  width: 140px;
+  height: 22px;
+  padding: 4px 16px;
+}
+
+#submit-button{
+  width: 140px;
+  height: 36px;
+  padding: 4px 16px;
+}
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.asdf{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  background-color: #654321;
+}
+
+.container{
+  border: 2px solid hsl(207, 90%, 54%);
+  width: 300px;
+  padding: 10px;
+}
+
+#right{
+  float:right;
+}
+
+#list{
+  margin: 10px;
+  background-color: ghostwhite;
+  padding: 10px;
+}
+
+#input-text {
+  margin-right: 12px;
+  height: 22px;
+  border: 4px solid hsl(50, 100%, 58%);
+  padding-left: 8px;
+  min-width: 140px;
+}
+
+
+#input-button {
+  width: 140px;
+  height: 46px;
+  padding: 4px 16px;
+  border: 4px solid hsl(120, 69%, 41%);
+  line-height: 30px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(200, 20%, 40%);
+}
+
+#delete-button{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#tr{
+  width: 300px;
+}
+
+#container{
+  border-color: blue;
+  background-color: red;
+  display: inline;
+}
+
+#input {
+  margin-bottom: 20px;
+}
+
+#output {
+  border: 4px solid hsl(207, 90%, 54%);
+}
