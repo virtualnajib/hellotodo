@@ -1,10 +1,16 @@
 const addButton = document.getElementById("submitButton");
-const listMind = document.getElementById("listMind")
+const listMind = document.getElementById("listMind");
+const search = document.getElementById("search");
+const searchButton = document.getElementById("searchButton");
 let mind = [];
 
 addButton.addEventListener("click", () => {
   addMind();
   showMind();
+})
+
+searchButton.addEventListener("click", () => {
+  searchTodo();
 })
 
 const addMind = () => {
@@ -53,4 +59,10 @@ const deleteContact = (index) => {
 if (localStorage.mind){ //function to keep previous array of addressBook
   mind = JSON.parse(localStorage.mind);
   showMind()
+}
+
+const searchTodo = function() {
+  var text = search.value.toLowerCase() // Get the text and set to lowercase
+  let find = mind.filter(word => word.toLowerCase().includes(text)); // Filter todo based on textbox
+  alert(find.join(', ')) // Alert the result
 }
